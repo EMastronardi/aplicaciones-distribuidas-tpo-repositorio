@@ -4,7 +4,10 @@ import java.io.Serializable;
 
 public class SucursalVO implements Serializable{
 	
-	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6295524971234302957L;
 	private int idSucursal;
 	private String nombre;
 
@@ -23,7 +26,11 @@ public class SucursalVO implements Serializable{
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	@Override
+	public String toString() {
+		
+		return "Id: " + this.idSucursal+" - Nombre: " + this.nombre;
+	}
 	public SucursalVO() {
 
 	}
