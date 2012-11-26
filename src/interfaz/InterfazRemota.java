@@ -12,4 +12,6 @@ public interface InterfazRemota extends Remote{
 	public boolean abrirMesa(String nombreSucursal, List<Integer> nrosMesas, String nombreMozo, int cantComenzales) throws RemoteException;
 	
 	public List<SucursalVO> getSucursales() throws RemoteException;
+	
+	public String getCadena() throws RemoteException;
 }
